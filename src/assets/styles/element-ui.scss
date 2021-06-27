@@ -1,0 +1,24 @@
+$--font-path: 'element-plus/lib/theme-chalk/fonts';
+@import "element-plus/packages/theme-chalk/src/index";
+@import "./vars";
+
+.el-message {
+  min-width: auto;
+  box-sizing: border-box;
+  padding: 10px 15px;
+  background: #fff;
+  border: 0;
+  border-radius: 4px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, .15);
+  text-align: center;
+
+  &.el-message--info {
+    .el-icon-info {
+      color: $color-info;
+    }
+  }
+
+  .el-message__content {
+    color: $color-sub-text;
+  }
+}
